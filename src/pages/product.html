@@ -5,38 +5,61 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>| FixHealth</title>
-  <link rel="stylesheet" href="/src/assets/styles/index.css" />
+  <link rel="stylesheet" href="../assets/styles/index.css" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header id="header" class="header">
     <div class="container">
-      <a class="logo" href="/">
-        <img src="/src/assets/images/logo-sofa-gg.png" alt="heart icon" />
+      <a class="logo" href="../../index.html">
+        <img src="../assets/images/logo-sofa-gg.png" alt="heart icon" />
         <span>МійДиванчик</span>
       </a>
 
       <nav class="links">
         <div id="dropdown" class="dropdown">
-          <a href="/catalog" class="link dropdown-trigger">Каталог</a>
-          <ul id="dropdown-list" class="dropdown-list"></ul>
+          <a href="../pages/catalog.html" class="link dropdown-trigger">Каталог</a>
+          <ul id="dropdown-list" class="dropdown-list">
+            <li class="list-item">
+              <a href="../pages/catalog.html?category=sofa" class="list-link">
+                Дивани
+              </a>
+              <ul class="dropdown-underlist">
+                <li class="underlist-item">
+                  <a href="../pages/catalog.html?category=sofa&subcategory=straight" class="list-link">
+                    Прямі дивани
+                  </a>
+                </li>
+                <li class="underlist-item">
+                  <a href="../pages/catalog.html?category=sofa&subcategory=corner" class="list-link">
+                    Кутові дивани
+                  </a>
+                </li>
+                <li class="underlist-item">
+                  <a href="../pages/catalog.html?category=sofa&subcategory=modular" class="list-link">
+                    Модульні дивани
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
         <!-- <a class="link" href="/#awards">Наші нагороди</a> -->
-        <a class="link" href="/#about">Про нас</a>
+        <a class="link" href="#about">Про нас</a>
       </nav>
 
       <div class="row">
         <div id="search" class="search">
           <div id="search-bg" class="search-bg"></div>
           <button type="submit" id="search-trigger" class="search-trigger">
-            <img src="/src/assets/images/search.svg" alt="search icon" />
+            <img src="../assets/images/search.svg" alt="search icon" />
             <span>Пошук</span>
           </button>
           <form id="search-form" class="search-form">
             
             <button type="submit" class="search-btn">
-              <img src="/src/assets/images/search.svg" alt="search icon" />
+              <img src="../assets/images/search.svg" alt="search icon" />
             </button>
             <input name="search" type="text" class="search-input" />
             <ul id="product-list" class="search-list"></ul>
@@ -47,34 +70,34 @@
        
 
         <a href="/personal-account/favorites" id="favorite" class="favorite">
-          <img src="/src/assets/images/favorite.svg" alt="favorite icon" />
+          <img src="../assets/images/favorite.svg" alt="favorite icon" />
           <span id="favorite-quantity"></span>
         </a>
 
         <a href="/personal-account/shopping-cart" id="basket" class="basket">
-          <img src="/src/assets/images/basket.svg" alt="basket icon" />
+          <img src="../assets/images/basket.svg" alt="basket icon" />
           <span id="basket-quantity"></span>
         </a>
 
       </div>
 
       <button class="burger-menu" id="burger-menu">
-        <img src="/src/assets/images/bars-solid (1).svg" alt="burger menu icon" />
+        <img src="../assets/images/bars-solid (1).svg" alt="burger menu icon" />
       </button>
       <nav class="mobile-nav" id="mobile-nav">
 
-        <a href="/catalog" class="link">Усі товари</a>
+        <a href="../pages/catalog.html" class="link">Усі товари</a>
         <div class="dropdown-chat">
           <button class="dropdown-trigger-chat">Дивани</button>
           <ul class="dropdown-content-chat">
             <li class="underlist-item-mobile">
-              <a href="/catalog?underCategoryId=669e1cb66704fe349a912721" class="list-link">Прямі дивани</a>
+              <a href="../pages/catalog.html?category=sofa&subcategory=straight" class="list-link">Прямі дивани</a>
             </li>
             <li class="underlist-item-mobile">
-              <a href="/catalog?underCategoryId=669e1cbe6704fe349a912725" class="list-link">Кутові дивани</a>
+              <a href="../pages/catalog.html?category=sofa&subcategory=corner" class="list-link">Кутові дивани</a>
             </li>
             <li class="underlist-item-mobile">
-              <a href="/catalog?underCategoryId=669e1cc66704fe349a912729" class="list-link">Модульні дивани</a>
+              <a href="../pages/catalog.html?category=sofa&subcategory=modular" class="list-link">Модульні дивани</a>
             </li>
           </ul>
         </div>
@@ -92,15 +115,15 @@
   <main class="product-page">
     <section class="product-section">
       <div class="container product" id="product">
-        
+
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <a class="logo" href="/">
-        <img src="/src/assets/images/logo-sofa-gg.png" alt="heart icon" />
+      <a class="logo" href="../../index.html">
+        <img src="../assets/images/logo-sofa-gg.png" alt="heart icon" />
         <span>МійДиванчик</span>
       </a>
       <ul class="footer-list">
@@ -145,16 +168,16 @@
         <p class="footer-title">Завантажуйте наш додаток</p>
         <div class="row">
           <a href="/">
-            <img src="/src/assets/images/app-store.png" alt="app store image" />
+            <img src="../assets/images/app-store.png" alt="app store image" />
           </a>
           <a href="/">
-            <img src="/src/assets/images/google-play.png" alt="google play image" />
+            <img src="../assets/images/google-play.png" alt="google play image" />
           </a>
           <a href="/">
-            <img src="/src/assets/images/telegram.png" alt="telegram image" />
+            <img src="../assets/images/telegram.png" alt="telegram image" />
           </a>
           <a href="/">
-            <img src="/src/assets/images/viber.png" alt="viber image" />
+            <img src="../assets/images/viber.png" alt="viber image" />
           </a>
         </div>
       </div>
@@ -196,8 +219,10 @@
       searchTrigger.classList.toggle('active');
     });
   </script>
-  <script type="text/javascript" src="/src/functionality/modules/base.js"></script>
-  <script type="text/javascript" src="/src/functionality/modules/product.js"></script>
+  <!-- <script type="text/javascript" src="src/functionality/modules/base.js"></script> -->
+  <script type="text/javascript" src="../db/db_cards.js"></script>
+  <script type="text/javascript" src="../modules/product.js"></script>
+  <script type="text/javascript" src="../modules/search.js"></script>
 </body>
 
 </html>
